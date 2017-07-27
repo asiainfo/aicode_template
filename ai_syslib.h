@@ -6,7 +6,7 @@
 #include <string.h>
 #define ai_memcpy(void * src,const void * dest,len)
 {
-if(len<=0)
+if(len<0)
    return NULL;
 else
   return memcpy(src,dest,len);
